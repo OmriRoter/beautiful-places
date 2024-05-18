@@ -5,40 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Beautiful Places</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery img {
+            width: 100%;
+            max-width: 1200px; /* Adjust the max-width as needed */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>The 5 Most Beautiful Places I've Been To</h1>
     <div class="gallery">
-        <div class="image-container">
-            <a href="acatenango.html">
-                <img src="place1.jpeg" alt="Acatenango Volcano Guatemala">
-                <p>Acatenango Volcano Guatemala</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="cancun.html">
-                <img src="place2.jpg" alt="Cancun Mexico">
-                <p>Cancun Mexico</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="caye_caulker.html">
-                <img src="place3.jpeg" alt="Caye Caulker Belize">
-                <p>Caye Caulker Belize</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="vail.html">
-                <img src="place4.jpeg" alt="Vail Colorado">
-                <p>Vail Colorado</p>
-            </a>
-        </div>
-        <div class="image-container">
-            <a href="petah_tikva.html">
-                <img src="place5.jpeg" alt="פתח תקווה ישראל">
-                <p>פתח תקווה ישראל</p>
-            </a>
-        </div>
+        <img src="beautifulPlaces.jpg" usemap="#image-map" alt="Mapped Beautiful Places">
+
+        <map name="image-map">
+            <area target="" alt="Acatenango Volcano Guatemala" title="Acatenango Volcano Guatemala" href="acatenango.html" coords="0,0,240,512" shape="rect">
+            <area target="" alt="Petah Tikva Israel" title="Petah Tikva Israel" href="petah_tikva.html" coords="240,0,480,512" shape="rect">
+            <area target="" alt="Caye Caulker Belize" title="Caye Caulker Belize" href="caye_caulker.html" coords="480,0,720,512" shape="rect">
+            <area target="" alt="Vail Colorado" title="Vail Colorado" href="vail.html" coords="720,0,960,512" shape="rect">
+            <area target="" alt="Cancun Mexico" title="Cancun Mexico" href="cancun.html" coords="960,0,1200,512" shape="rect">
+        </map>
     </div>
 </body>
 </html>
